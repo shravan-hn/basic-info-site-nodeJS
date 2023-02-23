@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info-site</title>
+    <style>
+        .navigation {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            overflow: hidden;
+        }
+        
+        .navigation li {
+            float: left;
+        }
+        
+        .navigation li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        .navigation li a:hover {
+            background-color: #111;
+        }
+        
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        label {
+            display: block;
+            margin-top: 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        
+        input,
+        textarea {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+        
+        button {
+            display: block;
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #111;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>NODE JS | Scratch</h1>
+    <nav>
+        <ul class="navigation">
+            <li><a href="http://localhost:8080/">Home</a></li>
+            <li><a href="http://localhost:8080/about">About</a></li>
+            <li><a href="http://localhost:8080/contact-us">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h1>Contact Us</h1>
+
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone">
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" rows="5"></textarea>
+            <button>Submit</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
